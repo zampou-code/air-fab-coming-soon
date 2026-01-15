@@ -12,10 +12,10 @@ export function MainCarousel() {
   return (
     <Carousel plugins={[Fade({}), Autoplay({ delay: 5000 })]}>
       <CarouselContent>
-        {Array.from({ length: 6 }).map((_, index) => (
+        {Array.from({ length: 3 }).map((_, index) => (
           <CarouselItem key={index}>
             <MainCarouselItem
-              src={`/images/carousel-bg/intro-bg-${index + 1}.jpg`}
+              src={`/images/carousel-bg-2/intro-bg-${index + 1}.jpg`}
             />
           </CarouselItem>
         ))}

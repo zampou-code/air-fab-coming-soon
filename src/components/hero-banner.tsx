@@ -10,10 +10,12 @@ export function HeroBanner() {
         <div className="w-full items-center justify-center grid gap-10 md:gap-4 grid-cols-1 md:grid-cols-[1fr_400px] grid-rows-1">
           <div className="text-white space-y-2 md:space-y-5">
             <Badge variant="destructive">Coming Soon!</Badge>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-              Our new website is on its way.
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
+              Notre nouveau site web est en cours de développement.
             </h2>
-            <p className="text-lg">Get notified when we launch.</p>
+            <p className="text-sm sm:text-base md:text-lg">
+              Pour toute assistance clientèle, envoyez-nous un message.
+            </p>
           </div>
           <ContactForm />
         </div>
@@ -21,3 +23,4 @@ export function HeroBanner() {
     </div>
   );
 }
+//  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"></h2>

@@ -10,20 +10,22 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "./ui/textarea";
+import { Textarea } from "@/components/ui/textarea";
 
 export function ContactForm() {
   return (
     <Card className="w-full">
       <CardHeader>
-        <CardTitle>Contact Us</CardTitle>
-        <CardDescription>For Customer Support, Send us a note.</CardDescription>
+        <CardTitle>Contactez-nous</CardTitle>
+        <CardDescription>
+          Pour toute assistance clientèle, envoyez-nous un message.
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <form>
           <div className="flex flex-col gap-6">
             <div className="grid gap-2">
-              <Label htmlFor="email">Name</Label>
+              <Label htmlFor="email">Nom</Label>
               <Input
                 required
                 id="email"
@@ -41,11 +43,11 @@ export function ContactForm() {
               />
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="message">Your message</Label>
+              <Label htmlFor="message">Votre message</Label>
               <Textarea
                 id="message"
                 className="h-30 resize-none"
-                placeholder="Type your message here."
+                placeholder="Tapez votre message ici."
               />
             </div>
           </div>
@@ -53,7 +55,7 @@ export function ContactForm() {
       </CardContent>
       <CardFooter className="flex-col gap-2">
         <Button variant="primary" type="submit" className="w-full" size="lg">
-          Send Message
+          Envoyer Message
         </Button>
       </CardFooter>
     </Card>
